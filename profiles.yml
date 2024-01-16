@@ -1,0 +1,12 @@
+dbtlearn:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('SF_ACCOUNT') }}"
+      user: "{{ env_var('SF_USERNAME') }}"
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role:  "{{ env_var('SF_USERNAME') }}"
+      database:  "{{ env_var('SF_USERNAME') }}"
+      warehouse:  "{{ env_var('SF_USERNAME') }}"
+      schema: RAW
