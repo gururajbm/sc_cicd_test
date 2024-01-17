@@ -7,9 +7,12 @@ on:
 
 env:
   DBT_PROFILES_DIR: ./
-  DBT_SNOWFLAKE_ACCOUNT: ${{ secrets.DBT_SNOWFLAKE_ACCOUNT }}
-  DBT_SNOWFLAKE_PW: ${{ secrets.DBT_SNOWFLAKE_PW }}
-
+  SF_ACCOUNT: ${{ secrets.SF_ACCOUNT }}
+  SF_USERNAME: ${{ secrets.SF_USERNAME }}
+  SF_ROLE: ${{ secrets.SF_ROLE }}
+  SF_WAREHOUSE: ${{ secrets.SF_WAREHOUSE }}
+  SF_DATABASE: ${{ secrets.SF_DATABASE }}
+  SNOWFLAKE_PASSWORD: ${{ secrets.SF_PASSWORD }}
 jobs:
   dbt_run_test:
     name: dbt test
