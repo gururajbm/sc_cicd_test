@@ -31,6 +31,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install dbt-snowflake
+          dbt deps --target {{target}}
 
       - name: Run test
         run: dbt test
