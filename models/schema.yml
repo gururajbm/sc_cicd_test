@@ -32,4 +32,4 @@ models:
           - dbt_expectations.expect_column_quantile_values_to_be_between:
               quantile: 1.00 #.99
               min_value: 0
-              max_value: 15000
+              max_value: 500
